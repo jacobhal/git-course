@@ -38,5 +38,20 @@ To merge the feature branch into master in the example below, follow these steps
 
 
 ## Sourcetree/Fork
+Sourcetree and Fork are two similar visual Git tools that are popular.
 
 ## Merge conflicts
+Merge conflicts happen when the same files are edited in both of the branches that we are trying to merge.
+
+**Merge conflict example**
+![Image not found](https://github.com/jacobhal/git-course/blob/master/08_merging_branches/merge-conflicts.png "Merge conflict example")
+
+`git ls-files -s` - List files in the staging area. The files with conflicts will have 3 copies with numbers 1, 2 and 3.
+
+> 1 = Base, 2 = Local, 3 = Remote
+
+> During the merging process, git creates another HEAD file called MERGE_HEAD. This is a reference to the last commit of the feature branch that we are merging.
+
+**git log after merge conflict**
+![Image not found](https://github.com/jacobhal/git-course/blob/master/08_merging_branches/merge-conflicts-git-log.png "Merge conflict example")
+
