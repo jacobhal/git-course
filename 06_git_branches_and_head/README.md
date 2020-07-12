@@ -30,4 +30,4 @@ We need branches to work on different features while keeping the master (or deve
 
 See the image below
 
-![Image not found](https://github.com/jacobhal/git-course/blob/master/06_git_branches_and_head/Branches.png "branches example")
+![Image not found](https://github.com/jacobhal/git-course/blob/master/06_git_branches_and_head/branches.png "branches example")
