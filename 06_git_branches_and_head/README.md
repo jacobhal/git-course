@@ -5,6 +5,10 @@
 * Pointers for all branches are located in **.git/refs/heads**.  
 * The branch pointer moves automatically after every new commit.  
 
+`git branch` - List all local branches
+`git branch <name>` - Create a new branch
+`git branch -d <name>` - Delete a branch (it has to be merged, if you want to force delete it use `-D` instead)
+`git branch -m <old-branch> <new-branch>` - Rename a branch
 `git checkout <branch>` - Switch to an existing branch
 `git checkout -b <branch>` - Create a new branch and switch to it
 `git checkout -b <new-branch> <existing-branch>` - Create a new branch and switch to it BUT base it on an existing branch other than the current
@@ -28,6 +32,6 @@ The default VIM editor can be confusing. If you type in `git commit` and omit th
 ## Git branches management
 We need branches to work on different features while keeping the master (or development etc. if using Git Flow) branch clean.
 
-See the image below
+Branch management example with two feature branches: BR-102 and exp
 
 ![Image not found](https://github.com/jacobhal/git-course/blob/master/06_git_branches_and_head/branches.png "branches example")
