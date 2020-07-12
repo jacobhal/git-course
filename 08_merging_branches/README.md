@@ -20,6 +20,21 @@ To merge the feature branch into master in the example below, follow these steps
 ![Image not found](https://github.com/jacobhal/git-course/blob/master/08_merging_branches/fast-forward-after.png "Fast-forward after merge example")
 
 ## 3-way merge
+3-way merge is necessary if there are further commits in the receiving branch after the commit where the feature branch was created. If we fast-forward we would lose the information of all the new commits on the receiving branch.
+
+To merge the feature branch into master in the example below, follow these steps:  
+1. Checkout master branch so that HEAD is pointing to master.
+2. Select which branch you want to merge into master (git will check if there are any more commits on the master branch since the feature branch was created).
+3. 3-way merge is performed by taking the *Ancestor* commit (the latest common commit between the two branches) and the latest commit on each branch and creates a new *Merge commit*. Notice that the new merge commit has two parents, the latest commit on either branch used in the merge process. The feature branch can then be safely removed because the merge commit has the latest commit on the feature branch as a parent.
+
+> If you are using a mergetool such as KDiff3, the Ancestor is called *Base* or *A*, the receiving branch *Local* or *B* and the branch being merged *Remote* or *C*.
+
+**Before merge**
+![Image not found](https://github.com/jacobhal/git-course/blob/master/08_merging_branches/3-way-merge-before.png "3-way before merge example")
+
+**After merge**
+![Image not found](https://github.com/jacobhal/git-course/blob/master/08_merging_branches/3-way-merge-after.png "3-way after merge example")
+
 
 
 ## Sourcetree/Fork
