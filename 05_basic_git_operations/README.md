@@ -43,7 +43,7 @@ If we use `git cat-file -t 5fa53d7` we can verify that it is of type commit.
 A git file in Git may have one of four statuses:  
 * Untracked - Any new files in the working directory will be untracked (have to be staged with `git add`)
 * Modified - Tracked files that are modified (have to be staged with `git add`)
-* Staged - Files that are in the staging area (have to be commited with `git commit`)
+* Staged - Files that are in the staging area (have to be committed with `git commit`)
 * Unmodified - Files that are in the same state in the working directory as in the git repository (sync the working directory/git repository by using `git push`/`git pull`)
 
 ## Unstage files
