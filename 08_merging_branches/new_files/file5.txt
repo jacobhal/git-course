@@ -1,0 +1,3 @@
+New file in the new_files directory
+
+file5.txt was just changed
