@@ -35,3 +35,6 @@ We need branches to work on different features while keeping the master (or deve
 Branch management example with two feature branches: BR-102 and exp
 
 ![Image not found](https://github.com/jacobhal/git-course/blob/master/06_git_branches_and_head/branches.png "branches example")
+
+## Reusing blobs
+Git resuses blobs if they have the same content. file4.txt in this folder is the same as file1.txt in folder 04_git_under_the_hood so we can use the same hash that was created before. The new tree in BR-1 contains a pointer to an existing blob for file4.txt.
