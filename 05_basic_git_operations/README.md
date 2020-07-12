@@ -20,7 +20,9 @@ A commit always contains
 ## Creating a commit
 1. First check your directory status using `git status`.  
 2. Add the files you want to commit by moving them from your working directory to the staging area by using `git add .`. The "." adds all files to the staging area.  
-3. Create a commit by using `git commit -m` and provide a commit message. Use a second "-m" to add a description as well, e.g. `git commit -m "Commit message" - "Commit description"`.  
+3. Create a commit by using `git commit -m <commit-message>` and provide a commit message. Use a second "-m" to add a description as well, e.g. `git commit -m "Commit message" - "Commit description"`.  
+
+> Tip: You can use `git commit -a -m <commit-message>` if you want to combine the commit with `git add .`.
 
 > After the commit is created we get some information about it: which branch it was made to and the hash of the recently made commit.
 
