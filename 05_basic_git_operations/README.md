@@ -12,8 +12,8 @@ A commit always contains
 
 ## Using the git config command to set your local git config
 `git config --global user.name <Name>` - Update name for git globally  
-`git config --global user.email <Email>` - Update email for git globally  
-`git config --list` - View the current config
+`git config --global user.email <Email>` - Update email for git globally    
+`git config --list` - View the current config  
 
 > The config information for name and email will be attatched to your commits  
 
@@ -32,11 +32,11 @@ If we use `git cat-file -t 5fa53d7` we can verify that it is of type commit.
 `git cat-file -p 5fa53d7` gives us the contents of the commit, such as which tree it points to and our local git config variables for email & name.
 
 ## Various commands
-`git status` - See the status of files in working directory and staging area.
-`git add` - Add files to the staging area
-`git commit` - Write changes to the git repository
-`git log` - History of commits
-`git checkout` - Checkout a specific branch or a commit
+`git status` - See the status of files in working directory and staging area  
+`git add` - Add files to the staging area  
+`git commit` - Write changes to the git repository  
+`git log` - History of commits  
+`git checkout` - Checkout a specific branch or a commit  
 
 **Important command that can help trace a weird state**
 `history | fgrep git` - Check the command history for all git commands
@@ -49,6 +49,6 @@ A git file in Git may have one of four statuses:
 * Unmodified - Files that are in the same state in the working directory as in the git repository (sync the working directory/git repository by using `git push`/`git pull`)
 
 ## Unstage files
-`git rm --cached <FileName>` - Remove file from the staging area
-`git reset HEAD^` or `git reset --hard` - Remove commits made but keep local changes
+`git rm --cached <FileName>` - Remove file from the staging area  
+`git reset HEAD^` or `git reset --hard` - Remove commits made but keep local changes  
 

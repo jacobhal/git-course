@@ -7,9 +7,9 @@ Commit = Stores different versions of our projects
 Annotated tag = Persitent text pointers to specific commits
 
 ## Git low-level commands
-`git hash-object` - Create a new *git object* and write it into a git repository
-`git cat-file` - Read information about the git object
-`git mktree` - Create a new *tree object* in git
+`git hash-object` - Create a new *git object* and write it into a git repository  
+`git cat-file` - Read information about the git object  
+`git mktree` - Create a new *tree object* in git  
 
 `echo "Hello, Git" | git hash-object --stdin -w` - Pass the string "Hello, Git" into git hash-object by piping it through. This creates a unique hash specific for the strings "Hello, Git", 'Hello, Git', Hello, Git. The -w option saves the git hash-object in folder **.git/objects/b7** (b7 = first two characters in hash string. Folder name + File name = Hash). Since folders are created based on the first two hash numbers, unrelated git objects can be stored in the same folder if they start with the same two hash numbers.
 
@@ -69,10 +69,10 @@ Converting from hex to binary is straightforward since hexadecimal numbers are s
 | 32             | 20            | 100000  |
 
 ## Low level git commands basic workflow
-`echo "New file in repo" > new_file.txt` - Create new file
-`cat new_file.txt` - See new file content
-`git hash-object new_file.txt -w` - Create new git object (ef612cd3359cadf7849edd014e318bae5d892a54)
-`git cat-file -p ef612cd3359cadf7849edd014e318bae5d892a54` - See new git object content
+`echo "New file in repo" > new_file.txt` - Create new file  
+`cat new_file.txt` - See new file content  
+`git hash-object new_file.txt -w` - Create new git object (ef612cd3359cadf7849edd014e318bae5d892a54)  
+`git cat-file -p ef612cd3359cadf7849edd014e318bae5d892a54` - See new git object content  
 
 ## Git trees
 
@@ -100,8 +100,8 @@ Permissions are stored in git tree objects.
 Hash for tree: c374b790aa7d77074bb0445679137a32704a610d
 
 ### Examine Git tree contents
-`git cat-file -p c374b790aa7d77074bb0445679137a32704a610d` - Will give the same lines we pasted into temp-tree.txt except that it is now stored in a git tree
-`git cat-file -t c374` - See the type of our newly created tree
+`git cat-file -p c374b790aa7d77074bb0445679137a32704a610d` - Will give the same lines we pasted into temp-tree.txt except that it is now stored in a git tree  
+`git cat-file -t c374` - See the type of our newly created tree  
 
 ## Working directory, Staging area and Git repository
 There are 3 locations where files live in git: Working directory, Staging area (index) and Git repository.  

@@ -79,7 +79,7 @@ During `git fetch`, Git downloads all new Git objects such as commits, blobs and
 ## Create a remote branch from local branch
 If you have a local branch that you want to push to your remote repository but it does not have a remote tracking branch (upstream branch), then we can use git push with a specific option.
 
-`git push --set-upstream origin <branch-name>` - Push and create remote branch with same name as local branch
+`git push --set-upstream origin <branch-name>` - Push and create remote branch with same name as local branch  
 `git push -u origin <branch-name>` - Shorthand version of the above
 
 ## Update tracking statuses of branches
@@ -94,5 +94,5 @@ See section [Pruning branches](#pruning-branches) for a more thorough descriptio
 `git push origin -d <branch-name>` - Delete branch with name <branch-name> on git server with name origin.
 
 ## Git show-ref
-`git show-ref` - See all local and remote references.
-`git show-ref <branch-name>` - See all local and remote references for <branch-name>.
+`git show-ref` - See all local and remote references
+`git show-ref <branch-name>` - See all local and remote references for <branch-name>

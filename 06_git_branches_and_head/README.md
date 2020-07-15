@@ -5,16 +5,16 @@
 * Pointers for all branches are located in **.git/refs/heads**.  
 * The branch pointer moves automatically after every new commit.  
 
-`git branch` - List all local branches
-`git branch -r` - List all remote branches
-`git branch -a` - List both local and remote branches
-`git branch -vv` - List all branches and corresponding remote branches.
-`git branch <name>` - Create a new branch
-`git branch -d <name>` - Delete a branch (it has to be merged, if you want to force delete it use `-D` instead)
-`git branch -m <old-branch> <new-branch>` - Rename a branch
-`git checkout <branch>` - Switch to an existing branch
-`git checkout -b <branch>` - Create a new branch and switch to it
-`git checkout -b <new-branch> <existing-branch>` - Create a new branch and switch to it BUT base it on an existing branch other than the current
+`git branch` - List all local branches  
+`git branch -r` - List all remote branches  
+`git branch -a` - List both local and remote branches  
+`git branch -vv` - List all branches and corresponding remote branches.  
+`git branch <name>` - Create a new branch  
+`git branch -d <name>` - Delete a branch (it has to be merged, if you want to force delete it use `-D` instead)  
+`git branch -m <old-branch> <new-branch>` - Rename a branch  
+`git checkout <branch>` - Switch to an existing branch  
+`git checkout -b <branch>` - Create a new branch and switch to it  
+`git checkout -b <new-branch> <existing-branch>` - Create a new branch and switch to it BUT base it on an existing branch other than the current  
 
 ## What is HEAD?
 HEAD is a reference to the currently checked-out branch or commit. We can only have one HEAD.  
