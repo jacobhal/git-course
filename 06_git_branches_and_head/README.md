@@ -6,6 +6,9 @@
 * The branch pointer moves automatically after every new commit.  
 
 `git branch` - List all local branches
+`git branch -r` - List all remote branches
+`git branch -a` - List both local and remote branches
+`git branch -vv` - List all branches and corresponding remote branches.
 `git branch <name>` - Create a new branch
 `git branch -d <name>` - Delete a branch (it has to be merged, if you want to force delete it use `-D` instead)
 `git branch -m <old-branch> <new-branch>` - Rename a branch
