@@ -37,7 +37,7 @@ In the diagram below, the tracking branches are master, release and BR-2.
 
 ![Image not found](https://github.com/jacobhal/git-course/blob/master/10_git_push_fetch_pull/tracking-branches.png "Tracking branch example")
 
-`git branch -vv` - List all branches and corresponding remote branches.
+`git branch -vv` - List all branches and corresponding remote branches.  
 `git checkout <remote-branch-name>` - Checkout on a remote branch automatically creates a local tracking branch.
 
 ## git remote show origin
@@ -49,9 +49,9 @@ If a remote branch is removed, the tracking branch reference becomes stale since
 `git remote prune origin` - Prune the origin to remove the remote branch reference (the local branch will still be available even if the reference to the remote is gone).
 
 ## Fetch, pull and push
-`git fetch` - Fetch changes from the remote server but do not merge them
-`git pull` - Fetch changes from remote branch and merge them into current branch
-`git push` - Push local changes to remote server
+`git fetch` - Fetch changes from the remote server but do not merge them  
+`git pull` - Fetch changes from remote branch and merge them into current branch  
+`git push` - Push local changes to remote server  
 
 **Git pull step-by-step**
 1. Checkout local branch and make sure that it is a tracking branch and has a corresponding remote branch. Use `git branch -vv` to check that this is the case.
@@ -60,9 +60,39 @@ If a remote branch is removed, the tracking branch reference becomes stale since
 4. After fetching, Git updates the FETCH_HEAD file that contains SHA1 hashes of last commits in the remote repository for all tracking branches.
 5. Git merges remote branch into current branch with `git merge FETCH_HEAD`.
 
+> If the remote branch is ahead and we can do a fast-forward merge when we perform `git pull`, the local HEAD pointer is simply moved to the last commit in the remote repository (the same place as origin/HEAD).
+
 ## FETCH_HEAD
+FETCH_HEAD contains the very last commit in the remote repository. FETCH_HEAD is a short-lived ref, to keep track of what has just been fetched from the remote repository in order to know what to merge when `git merge FETCH_HEAD` is executed.
 
+`git merge FETCH_HEAD` - Finds the first branch in .git/FETCH_HEAD list without the "not-for-merge" tag and merges into the currently checked out tracking branch.
 
-## Resolve conflicts during git pull
+## Fetching changes manually
+During `git fetch`, Git downloads all new Git objects such as commits, blobs and trees that were created in the tracking remote branches in the remote repository and recreates them in the local Git repository.
+
+## Check if up to date
+`git push -v` - Verbose push, will tell if everything is up to date  
+`git pull -v` - Verbose pull, will tell if everything is up to date for each branch
+
+> Compare `cat .git/refs/remotes/origin/<branch-name>` to `.git/refs/heads/<branch-name>` in order to verify that the SHA1 hashes are equal when everything is up to date.
+
+## Create a remote branch from local branch
+If you have a local branch that you want to push to your remote repository but it does not have a remote tracking branch (upstream branch), then we can use git push with a specific option.
+
+`git push --set-upstream origin <branch-name>` - Push and create remote branch with same name as local branch
+`git push -u origin <branch-name>` - Shorthand version of the above
+
+## Update tracking statuses of branches
+Remote pruning is necessary to update the tracking references.  
+See the picture below to see an example.  
+See section [Pruning branches](#pruning-branches) for a more thorough description.
+
+**How to update tracking statuses if remote branch is deleted**
+![Image not found](https://github.com/jacobhal/git-course/blob/master/10_git_push_fetch_pull/update-tracking.png "Tracking branch status example")
+
+## Remove a remote branch using the local terminal
+`git push origin -d <branch-name>` - Delete branch with name <branch-name> on git server with name origin.
 
 ## Git show-ref
+`git show-ref` - See all local and remote references.
+`git show-ref <branch-name>` - See all local and remote references for <branch-name>.
