@@ -49,3 +49,5 @@ Way 2: Rebase <branch-name> interactively to here --> Move commits up and down w
 Right click the commit --> Interactive Rebase --> Squash into parent (groups the current commit together with the last one)
 
 ## Explore graph and commits in Fork/Sourcetree
+
+Temporary text
