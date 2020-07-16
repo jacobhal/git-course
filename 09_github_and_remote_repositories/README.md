@@ -14,4 +14,5 @@ To interact with the remote repository you use the following commands: `git fetc
 A remote repository is a single point of interaction for all of the collaborators of a project
 
 **Remote repository collaboration**
+
 ![Image not found](https://github.com/jacobhal/git-course/blob/master/09_github_and_remote_repositories/remote-repository.png "Remote repository collaboration example")

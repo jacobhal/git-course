@@ -12,23 +12,23 @@ If you want to contribute to an open source repository the name pull request is 
 ![Image not found](https://github.com/jacobhal/git-course/blob/master/11_pull_requests/fork-contribution.png "Fork contribution")
 
 ## Pull request process
-**Step 1**
+**Step 1**  
 ![Image not found](https://github.com/jacobhal/git-course/blob/master/11_pull_requests/step-1.png "Step 1")
 
-**Step 2**
+**Step 2**  
 ![Image not found](https://github.com/jacobhal/git-course/blob/master/11_pull_requests/step-2.png "Step 2")
 
-**Step 3**
+**Step 3**  
 ![Image not found](https://github.com/jacobhal/git-course/blob/master/11_pull_requests/step-3.png "Step 3")
 
 > Note that an existing pull requests is automatically updated when new commits are pushed to remote
 
-**Step 4**
+**Step 4**  
 ![Image not found](https://github.com/jacobhal/git-course/blob/master/11_pull_requests/step-4.png "Step 4")
 
 > Note that you can set number of people that have to approve the pull request (and other rules if you want to).
 
-**Step 5**
+**Step 5**  
 ![Image not found](https://github.com/jacobhal/git-course/blob/master/11_pull_requests/step-5.png "Step 5")
 
 > Note that not every person might have permission to perform the merge. In large teams only a few selected people might have that authority.

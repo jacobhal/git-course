@@ -14,6 +14,7 @@ What we want to do is to add another remote server called upstream for our paren
 We want it to look like the diagram below.
 
 **Upstream example diagram**
+
 ![Image not found](https://github.com/jacobhal/git-course/blob/master/12_fork_contributions/upstream-example.png "Setup upstream example")
 
 ## Adding upstream to parent repository

@@ -5,6 +5,7 @@
 See the diagram below to see where they fit.
 
 **Commands overview**
+
 ![Image not found](https://github.com/jacobhal/git-course/blob/master/10_git_push_fetch_pull/commands-overview.png "Commands overview")
 
 You should only push to remote repository when changes have been tested locally.
@@ -88,6 +89,7 @@ See the picture below to see an example.
 See section [Pruning branches](#pruning-branches) for a more thorough description.
 
 **How to update tracking statuses if remote branch is deleted**
+
 ![Image not found](https://github.com/jacobhal/git-course/blob/master/10_git_push_fetch_pull/update-tracking.png "Tracking branch status example")
 
 ## Remove a remote branch using the local terminal
