@@ -5,3 +5,4 @@ Trying modifying again
 Last modification
 
 Edit line 7 in master
+Edit line 7 in feature1
