@@ -71,3 +71,8 @@ Settings --> Branches --> Branch protection rules
 > Rules such as preventing direct pushes, prevent deletion, require status checks before merging can be added here
 
 ## Working with issues on Github
+Issues are comments from different people, either contributors to the project or external.  
+They can be bugs, problems, suggestions for improvements etc.  
+Based on issues you may create branches related to them.
+
+When you commit something or comment on a pull request, you can link the specific issue by adding #<issue-number>.
