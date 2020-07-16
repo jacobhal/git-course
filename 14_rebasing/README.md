@@ -36,7 +36,7 @@ In order to rebase feature1 onto master:
 1. Perform rebasing by checking out feature1, then right-clicking the master branch and select "Rebase Interactively 'feature1' to Here".
 1. (Alternative) In the branches outline to the left, drag feature1 onto master and select "Rebase Interactively 'feature1' on 'master'".
 2. Click "Rebase" to apply the rebase changes.
-3. 
+3. Checkout master --> Right-click feature1 branch --> Merge Into 'master' (remember to keep "Always create a merge commit" unchecked if you want a fully linear history)
 
 **Change the commit message of a commit using Rebase**  
 Way 1: Right click the commit --> Interactive Rebase --> Reword Message  
