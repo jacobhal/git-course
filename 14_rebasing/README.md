@@ -29,6 +29,11 @@ Git creates "copies" of the commits from the feature branch and puts them onto m
 
 **Step 2**  
 Git moves the master pointer to the same place as our feature pointer, thus we get our linear history.
-![Image not found](https://github.com/jacobhal/git-course/blob/master/14_rebasing/step-2-rebase.png "Rebase step 2")  
+![Image not found](https://github.com/jacobhal/git-course/blob/master/14_rebasing/step-2-rebase.png "Rebase step 2") 
+
+**Rebase process in Fork**  
+In order to rebase feature1 onto master:  
+1. Perform rebasing by checking out feature1, then right-clicking the master branch and select "Rebase Interactively 'feature1' to Here".
+1. (Alternative) In the branches outline to the left, drag feature1 onto master and select "Rebase Interactively 'feature1' on 'master'".
 
 # Explore graph and commits in Fork/Sourcetree
