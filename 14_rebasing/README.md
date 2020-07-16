@@ -45,7 +45,7 @@ Way 2: Rebase <branch-name> interactively to here --> Click 3 dots of commit -->
 Way 1: Right click the commit --> Interactive Rebase --> Edit --> Move commits up and down with CMD + Up/Down arrows or drag and drop  
 Way 2: Rebase <branch-name> interactively to here --> Move commits up and down with CMD + Up/Down arrows or drag and drop  
 
-**Change the commit message of a commit using Rebase**  
-
+**Combine multiple commits into one using Rebase**  
+Right click the commit --> Interactive Rebase --> Squash into parent (groups the current commit together with the last one)
 
 ## Explore graph and commits in Fork/Sourcetree
