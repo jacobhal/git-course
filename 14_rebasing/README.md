@@ -35,7 +35,8 @@ Git moves the master pointer to the same place as our feature pointer, thus we g
 In order to rebase feature1 onto master:  
 1. Perform rebasing by checking out feature1, then right-clicking the master branch and select "Rebase Interactively 'feature1' to Here".
 1. (Alternative) In the branches outline to the left, drag feature1 onto master and select "Rebase Interactively 'feature1' on 'master'".
-2. 
+2. Click "Rebase" to apply the rebase changes.
+3. 
 
 **Change the commit message of a commit using Rebase**  
 Way 1: Right click the commit --> Interactive Rebase --> Reword Message  
