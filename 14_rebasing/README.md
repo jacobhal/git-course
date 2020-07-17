@@ -51,3 +51,34 @@ Right click the commit --> Interactive Rebase --> Squash into parent (groups the
 
 ## Explore graph with git log
 `git log --graph` - A visual representation of the commit tree
+
+## Merging vs Rebasing (Atlassian)
+The git rebase command has a reputation for being magical Git voodoo that beginners should stay away from, but it can actually make life much easier for a development team when used with care. In this article, we’ll compare git rebase with the related git merge command and identify all of the potential opportunities to incorporate rebasing into the typical Git workflow.
+
+### Conceptual overview
+The first thing to understand about git rebase is that it solves the same problem as git merge. Both of these commands are designed to integrate changes from one branch into another branch—they just do it in very different ways.
+
+Consider what happens when you start working on a new feature in a dedicated branch, then another team member updates the master branch with new commits. This results in a forked history, which should be familiar to anyone who has used Git as a collaboration tool.
+
+Git moves the master pointer to the same place as our feature pointer, thus we get our linear history.  
+![Image not found](https://github.com/jacobhal/git-course/blob/master/14_rebasing/atlassian-images/image-1.png "Image 1")
+
+#### The Merge Option
+
+#### The Rebase Option
+
+#### Interactive Rebasing
+
+### The Golden Rule of Rebasing!!!
+
+#### Force-Pushing
+
+### Workflow Walkthrough
+
+#### Local Cleanup
+
+#### Incorporating Upstream Changes Into a Feature
+
+#### Reviewing a Feature With a Pull Request
+
+#### Integrating an Approved Feature
