@@ -202,8 +202,6 @@ You can resolve this fork the exact same way as you integrate upstream changes f
 
 ![Image not found](https://github.com/jacobhal/git-course/blob/master/14_rebasing/atlassian-images/image-9.svg "Image 9")
 
-![Image not found](https://github.com/jacobhal/git-course/blob/master/14_rebasing/atlassian-images/image-10.svg "Image 10")
-
 Note that this rebase doesn’t violate the Golden Rule of Rebasing because only your local feature commits are being moved—everything before that is untouched. This is like saying, “add my changes to what John has already done.” In most circumstances, this is more intuitive than synchronizing with the remote branch via a merge commit.
 
 By default, the git pull command performs a merge, but you can force it to integrate the remote branch with a rebase by passing it the --rebase option.
@@ -221,11 +219,7 @@ After a feature has been approved by your team, you have the option of rebasing 
 
 This is a similar situation to incorporating upstream changes into a feature branch, but since you’re not allowed to re-write commits in the master branch, you have to eventually use git merge to integrate the feature. However, by performing a rebase before the merge, you’re assured that the merge will be fast-forwarded, resulting in a perfectly linear history. This also gives you the chance to squash any follow-up commits added during a pull request.
 
-![Image not found](https://github.com/jacobhal/git-course/blob/master/14_rebasing/atlassian-images/image-11.svg "Image 11")
-
-![Image not found](https://github.com/jacobhal/git-course/blob/master/14_rebasing/atlassian-images/image-12.svg "Image 12")
-
-![Image not found](https://github.com/jacobhal/git-course/blob/master/14_rebasing/atlassian-images/image-13.svg "Image 13")
+![Image not found](https://github.com/jacobhal/git-course/blob/master/14_rebasing/atlassian-images/image-10.svg "Image 10")
 
 If you’re not entirely comfortable with git rebase, you can always perform the rebase in a temporary branch. That way, if you accidentally mess up your feature’s history, you can check out the original branch and try again. For example:
 
