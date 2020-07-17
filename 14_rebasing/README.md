@@ -61,7 +61,7 @@ The first thing to understand about git rebase is that it solves the same proble
 Consider what happens when you start working on a new feature in a dedicated branch, then another team member updates the master branch with new commits. This results in a forked history, which should be familiar to anyone who has used Git as a collaboration tool.
 
 Git moves the master pointer to the same place as our feature pointer, thus we get our linear history.  
-![Image not found](https://github.com/jacobhal/git-course/blob/master/14_rebasing/atlassian-images/image-1.png "Image 1")
+![Image not found](https://github.com/jacobhal/git-course/blob/master/14_rebasing/atlassian-images/image-1.svg "Image 1")
 
 #### The Merge Option
 
