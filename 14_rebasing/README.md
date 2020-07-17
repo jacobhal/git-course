@@ -63,7 +63,15 @@ Consider what happens when you start working on a new feature in a dedicated bra
 Git moves the master pointer to the same place as our feature pointer, thus we get our linear history.  
 ![Image not found](https://github.com/jacobhal/git-course/blob/master/14_rebasing/atlassian-images/image-1.svg "Image 1")
 
+Now, let’s say that the new commits in master are relevant to the feature that you’re working on. To incorporate the new commits into your feature branch, you have two options: merging or rebasing.
+
 #### The Merge Option
+The easiest option is to merge the master branch into the feature branch using something like the following:
+
+```
+git checkout feature
+git merge master
+```
 
 #### The Rebase Option
 
