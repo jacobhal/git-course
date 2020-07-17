@@ -131,7 +131,7 @@ When you save and close the file, Git will perform the rebase according to your 
 
 Eliminating insignificant commits like this makes your feature’s history much easier to understand. This is something that git merge simply cannot do.
 
-### The Golden Rule of Rebasing!!!
+### The Golden Rule of Rebasing
 Once you understand what rebasing is, the most important thing to learn is when *not* to do it. The golden rule of git rebase is to never use it on *public* branches.
 
 For example, think about what would happen if you rebased master onto your feature branch:
