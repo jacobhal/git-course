@@ -3,3 +3,5 @@
 ## Git Flow
 
 ## Cherry-picking
+
+## Git bisect
