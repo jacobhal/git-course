@@ -49,7 +49,7 @@ This also derives from develop branch but is used during releases.
 This derives from the master branch and is used to fix a bug in the production branch that was identified after a release.
 
 **Gitflow diagram**  
-![Image not found](https://github.com/jacobhal/git-course/blob/master/18_additional_content/atlassian-images/gitflow.png "Git flow diagram")
+![Image not found](https://github.com/jacobhal/git-course/blob/master/18_additional_content/gitflow.png "Git flow diagram")
 
 ## Cherry-picking
 git cherry-pick is a powerful command that enables arbitrary Git commits to be picked by reference and appended to the current working HEAD. Cherry picking is the act of picking a commit from a branch and applying it to another. git cherry-pick can be useful for undoing changes. For example, say a commit is accidently made to the wrong branch. You can switch to the correct branch and cherry-pick the commit to where it should belong.
@@ -129,7 +129,7 @@ Additionally, git cherry-pick also accepts option input for merge conflict resol
 ## Git bisect
 There are times when debugging just won’t cut it – you have to know when and how the bug emerged. One of the ways to do this is binary search through the commit history with git bisect, which is now available in Fork. In the menubar, choose Repository → Bisect to enter bisect mode. Checkout any commit and mark it as good or bad – Fork will remember your choice and visualize your progress in the timeline.
 
-![Image not found](https://github.com/jacobhal/git-course/blob/master/18_additional_content/atlassian-images/bisect.gif "Git bisect")
+![Image not found](https://github.com/jacobhal/git-course/blob/master/18_additional_content/bisect.gif "Git bisect")
 
 ### Git bisect in terminal
 The git bisect command works like this: 
