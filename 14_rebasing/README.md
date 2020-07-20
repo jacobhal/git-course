@@ -47,7 +47,9 @@ Way 1: Right click the commit --> Interactive Rebase --> Edit --> Move commits u
 Way 2: Rebase <branch-name> interactively to here --> Move commits up and down with CMD + Up/Down arrows or drag and drop  
 
 **Combine multiple commits into one using Rebase**  
-Right click the commit --> Interactive Rebase --> Squash into parent (groups the current commit together with the last one)
+Way 1: Right click the commit --> Interactive Rebase --> Squash into parent (groups the current commit together with the last one)
+
+> Let's say you want to squash the 3 last commits into one, then do the following: Right click the commit before the 3 commits and choose "Rebase Interactively <branch-name> to Here". Choose the "squash" option for the 2 commits at the top and change the message of the third one, which will be the squashed commit.
 
 ## Explore graph with git log
 `git log --graph` - A visual representation of the commit tree
