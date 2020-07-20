@@ -1,5 +1,5 @@
-# Udemy course: Complete Git Guide: Understand and master Git and GitHub
-A Git Udemy course "Complete Git Guide: Understand and master Git and GitHub".
+# Complete Git Guide: Understand and master Git and GitHub
+A Git Udemy course.
 Navigate to different folders to read specific README files of different course sections.
 
 ## Certificate
