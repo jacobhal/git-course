@@ -16,5 +16,4 @@ There are several options to automate this process. For my own website I use the
 
 > By using Github Pages you can use the NPM package gh-pages and set predeploy/deploy steps as package.json scripts.
 
-## Configuring a custom domain for Github Pages
 
