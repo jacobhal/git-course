@@ -35,6 +35,9 @@ By resetting you can reset to any commit in your history. Any commits after the 
 `git reset --hard <SHA1-hash>` - Discard commit/commits. Discard changes in staging area (index). Discard changes in working directory (this is the default option).  
 `git reset --hard HEAD` - Discard all changes you have made locally and go back to the state of HEAD.  
 
+**Important**  
+`git reset --hard origin/<BranchName>` - Reset a local branch to the state of a remote branch.
+
 ## Git revert
 git revert is NOT a destructive command since it does not alter history unlike git reset. Thus, it can be safely used on public branches.
 
