@@ -7,14 +7,14 @@ Navigate to different folders to read specific README files of different course 
 Git pickaxe is great for finding a specific change based on regex and/or specific files.
 
 ```
-git log -p -S keyword
-git log -p -S keyword /path/to/file.ext
+git log -S keyword
+git log -S keyword /path/to/file.ext
 ```
 
 Examples:
 ```
 git log -S "Text"
-git log -S "Text" File.cs
+git log -S "Text" "File.cs"
 ```
 
 ## Certificate
